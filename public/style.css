@@ -1,0 +1,81 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle at top, #ffd700, #ff8800);
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+form {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 1rem;
+  border-radius: 10px;
+  max-width: 400px;
+  margin: 1rem auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+input, textarea {
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #ffcc00;
+  color: #000;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#comments {
+  margin-top: 1rem;
+  text-align: left;
+  max-width: 600px;
+  margin: 1rem auto;
+}
+
+.comment {
+  background: rgba(255,255,255,0.2);
+  padding: 0.8rem;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+/* Best wishes popup message */
+#wishMsg {
+  background: rgba(255, 255, 255, 0.9);
+  color: #ff6600;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 1rem;
+  border-radius: 15px;
+  margin: 1rem auto;
+  max-width: 400px;
+  display: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: all 0.4s ease;
+}
+
+#wishMsg.show {
+  display: block;
+  animation: fadeInOut 4s ease;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: scale(0.8); }
+  10% { opacity: 1; transform: scale(1); }
+  90% { opacity: 1; transform: scale(1); }
+  100% { opacity: 0; transform: scale(0.8); }
+}
+
